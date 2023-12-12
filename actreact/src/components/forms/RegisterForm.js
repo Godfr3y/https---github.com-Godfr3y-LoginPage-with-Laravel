@@ -1,7 +1,7 @@
 import { View, ToastAndroid, ImageBackground } from "react-native";
 import React from "react";
 import { Button, Text, TextInput } from "react-native-paper";
-import fetchServices from "../services/fetchServices";
+import Services from "../services/Services";
 
 export default function RegisterForm({ navigation }) {
   const [name, setName] = React.useState("");
@@ -41,7 +41,7 @@ export default function RegisterForm({ navigation }) {
         password_confirmation: repassword,
       };
 
-      const result = await fetchServices.postData(url, data);
+      const result = await Services.postData(url, data);
 
       if (result?.message != null) {
         showToast(result?.message);
