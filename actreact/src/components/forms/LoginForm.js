@@ -3,7 +3,7 @@ import React from "react";
 import { Button, Text, TextInput, HelperText } from "react-native-paper";
 import { Formik } from "formik";
 import * as Yup from "yup";
-import fetchServices from "../services/fetchServices";
+import Services from "../services/Services";
 import backgroundImage from "./image/ace.jpg";
 
 export default function LoginForm({ navigation }) {
@@ -16,7 +16,7 @@ export default function LoginForm({ navigation }) {
   const handleLogin = async (values) => {
     try {
       const url = "http://192.168.254.108(/api/v1/login";
-      const result = await fetchServices.postData(url, values);
+      const result = await Services.postData(url, values);
 
       if (result.message != null) {
         showToast(result?.message);
