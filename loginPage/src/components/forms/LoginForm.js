@@ -54,7 +54,7 @@ export default function LoginForm({ navigation }) {
         }) => {
           return (
             <View style={{ margin: 20 }}>
-              <Text style={{ fontSize: 32, marginBottom: 20, color: "white", fontWeight: "bold" }}>Login</Text>
+              <Text style={{ fontSize: 32, marginBottom: 20, color: "white", fontWeight: "bold", justifyContent: 'center', alignItems: 'center' }}>Welcome Back!</Text>
               <TextInput
                 mode="outlined"
                 placeholder="Email"
