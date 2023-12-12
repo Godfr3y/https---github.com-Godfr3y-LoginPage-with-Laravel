@@ -1,4 +1,4 @@
-const fetchServices = {
+const Services = {
   postData: async (url = "", data = {}) => {
     
     const response = await fetch(url, {
@@ -18,4 +18,4 @@ const fetchServices = {
   },
 };
 
-export default fetchServices;
+export default Services;
