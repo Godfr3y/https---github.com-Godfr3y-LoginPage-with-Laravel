@@ -4,7 +4,7 @@ import { Button, Text, TextInput, HelperText } from "react-native-paper";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import Services from "../services/Services";
-import backgroundImage from "./image/ace.jpg";
+import backgroundImage from "./image/background.jpg";
 
 export default function LoginForm({ navigation }) {
   const [showPass, setShowPass] = React.useState(false);
